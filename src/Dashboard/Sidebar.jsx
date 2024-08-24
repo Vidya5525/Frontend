@@ -17,7 +17,7 @@ function Sidebar() {
   const handleLogut = async () => {
     try {
       await axios
-        .get("https://hospital-management-system-h9yz.onrender.com/api/v1/user/admin/logout", {
+        .get("https://backend-h73h.onrender.com/api/v1/user/admin/logout", {
           withCredentials: true,
         })
         .then((res) => {

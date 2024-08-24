@@ -16,7 +16,7 @@ function AllAppointment() {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "https://hospital-management-system-h9yz.onrender.com/api/v1/appointment/getallappointment",
+          "https://backend-h73h.onrender.com/api/v1/appointment/getallappointment",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
@@ -32,7 +32,7 @@ function AllAppointment() {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-          "https://hospital-management-system-h9yz.onrender.com/api/v1/user/doctors",
+          "https://backend-h73h.onrender.com/api/v1/user/doctors",
           { withCredentials: true }
         );
         setDoctors(data.doctors);
@@ -46,7 +46,7 @@ function AllAppointment() {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       const { data } = await axios.put(
-        `https://hospital-management-system-h9yz.onrender.com/api/v1/appointment/update/${appointmentId}`,
+        `https://backend-h73h.onrender.com/api/v1/appointment/update/${appointmentId}`,
         { status },
         { withCredentials: true }
       );

@@ -23,7 +23,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://hospital-management-system-h9yz.onrender.com/api/v1/user/patient/registered",
+        "https://backend-h73h.onrender.com/api/v1/user/patient/registered",
         { firstName, lastName, email, phone, aadharNumber, dob, gender, password },
         {
           withCredentials: true,

@@ -16,7 +16,7 @@ function MessageForm() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://hospital-management-system-h9yz.onrender.com/api/v1/message/send",
+        "https://backend-h73h.onrender.com/api/v1/message/send",
         { firstName, lastName, email, phone, message },
         {
           withCredentials: true,
