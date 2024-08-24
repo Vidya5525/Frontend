@@ -66,7 +66,6 @@ export default function AdminLogin() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-
           <div className="form-group">
             <label htmlFor="confirmPassword">Confirm Password:</label>
             <input
